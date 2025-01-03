@@ -1,42 +1,200 @@
 <!DOCTYPE html>
 <html>
-<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pixel art ">
+    <title>Pixel Art</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1 div ="header">Etch-a-Sketch</h1>
-    </header>
-    <div class="twoContainers">
-            <div class="space">
-            </div>
-         <div class="options">
-            <div class="dropdown">
-                <button class="dropbtn">Pick pixel</button>
-                <div class="dropdown-content">
-                  <a href="#" data-value="8">8px</a>
-                  <a href="#" data-value="16">16px</a>
-                  <a href="#" data-value="32">32px</a>
-                  <a href="#" data-value="64">64px</a>
-                </div>
-              </div>                               
-            <div class="colorPicker">
-                <form action="">
-                    <label for="favcolor">Color picker:</label>
-                    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
-                    
-                  </form>                  
-            <div class="randomColor">
-                <button id="randomBtn">Random Colors</button>
-            </div>
-            <div class="clear">
-                <button id="clear">Clear</button>
-            </div>
-         </div>
+    <div class="header">
+         <div class="name">Pixel Art</div>
+         <img src="P.png" alt="Pixel Art Logo">
+          <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#tutorials">Tutorial</a></li>
+            <li><a href="#draw_now">Draw now!</a></li>
+        </ul>
+    </nav>
+</div>
+<section id="home">
+    <h1>Welcome to Pixel Art</h1>
+    <p>Explore, create, and share pixel art creations. Dive into the world of retro pixel graphics and unleash your creativity!</p>
+    
+    <h2>History of Pixel Art</h2>
+    <p>Pixel art was widely used in early video games, bringing life to characters and worlds through simple square pixels. Some of the most iconic games include:</p>
+    
+    <ul id ="gamelist">
+        <li>Super Mario Bros.</li>
+        <li>Pac-Man</li>
+        <li>Space Invaders</li>
+        <li>The Legend of Zelda</li>
+        <li>Sonic the Hedgehog</li>
+        <li>Donkey Kong</li>
+        <li>Metroid</li>
+        <li>Final Fantasy</li>
+        <li>Street Fighter II</li>
+        <li>Mega Man</li>
+        <li>Tetris</li>
+        <li>Castlevania</li>
+    </ul>
+    
+    <p>As technology advanced, the limitations of pixel art pushed artists to be creative with minimal resources. Today, pixel art is celebrated as both an aesthetic and a nostalgic nod to the past. It is widely used in indie games, digital art projects, and even modern digital design, continuing to inspire artists across the world.</p>
+    <h3>Top Software for Pixel Art</h3>
+    <table>
+        <tr>
+          <th>Rank</th>
+          <th>Software</th>
+          <th>Features</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Aseprite</td>
+          <td>User-friendly, Affordable</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Pixilart</td>
+          <td>Free, Web-based, Social features</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Piskel</td>
+          <td>Free, Beginner-friendly</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Photoshop</td>
+          <td>Expensive, Multi-purpose</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>GraphicsGale</td>
+          <td>Free for personal use, Classic</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Krita</td>
+          <td>Free, Powerful for animation</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Pro Motion NG</td>
+          <td>Affordable, Professional-grade</td>
+        </tr>
+      </table>
+      
+</section>
+
+
+
+
+<section id="gallery">
+    <h2>Featured Pixel Art</h2>
+    <div class="art-grid">
+        <div class="art-item">
+            <a target="_blank" href="luigi.jpeg">
+                <img src="luigi.jpeg" alt="Pixel Art luigi" width="600" height="400">
+            </a>
+            <div class="desc">Pixel Art Luigi</div>
+        </div>
+        <div class="art-item">
+            <a target="_blank" href="mario.jpeg">
+                <img src="mario.jpeg" alt="Pixel Art mario" width="600" height="400">
+            </a>
+            <div class="desc">Pixel Art Mario</div>
+        </div>
+        <div class="art-item">
+            <a target="_blank" href="meme.jpeg">
+                <img src="meme.jpeg" alt="Pixel Art 6" width="600" height="400">
+            </a>
+            <div class="desc">Virtual Pet Pou</div>
+        </div>
+        <div class="art-item">
+            <a target="_blank" href="cyb.jpeg">
+                <img src="cyb.jpeg" alt="Pixel Art 4" width="600" height="400">
+            </a>
+            <div class="desc">Capybara</div>
+        </div>
+        <div class="art-item">
+            <a target="_blank" href="kur.jpeg">
+                <img src="kur.jpeg" alt="Pixel Art 5" width="600" height="400">
+            </a>
+            <div class="desc">Kuromi</div>
+        </div>
+        <div class="art-item">
+            <a target="_blank" href="cat.jpeg">
+                <img src="kitty.jpeg" alt="Pixel Art cat" width="600" height="400">
+            </a>
+            <div class="desc">Hello Kitty</div>
         </div>
     </div>
+</section>
 
-</body>
+<section id="tutorials">
+    <h2>Learn Pixel Art</h2>
+    <p>New to pixel art? Check out our tutorials to get started.</p>
+    <p>Explore Tutorials</p>
+    <div class="video">
+    <iframe src="https://youtu.be/v-ibXM3xBjg?si=t66gKlyGVuUUrKzl">
+    </iframe>
+    <iframe src="https://youtu.be/lfR7Qj04-UA?si=IqHH5gHUACmrKCNA">
+    </iframe>
+    </div>
+</section>
+<section id="community">
+    <h2>Join the Pixel Art Community</h2>
+    <p>Check out our social media pages and join our growing community of pixel artists!</p>
+    <p>Follow us on:</p>
+    <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+    <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+    <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+</section>
+<section id="draw_now">
+    <h2>Draw Now!</h2>
+    <p>Ready to create your own pixel art masterpiece? Use the tools below to get started!</p>
+</section>
+<div class="twoContainers">
+    <div class="space">
+    </div>
+ <div class="options">
+    <div class="dropdown">
+        <button class="dropbtn">Pick pixel</button>
+        <div class="dropdown-content">
+          <a href="#" data-value="8">8px</a>
+          <a href="#" data-value="16">16px</a>
+          <a href="#" data-value="32">32px</a>
+          <a href="#" data-value="64">64px</a>
+        </div>
+      </div>                               
+    <div class="colorPicker">
+        <form action="">
+            <label for="favcolor">Color picker:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            
+          </form>                  
+    <div class="randomColor">
+        <button id="randomBtn">Random Colors</button>
+    </div>
+    <button id="createNewGrid">New</button>
+    <div class="clear">
+        <button id="clear">Clear</button>
+    </div>
+ </div>
+</div>
+</div>
+<footer>
+    <p class="copy">&copy; 2025 Pixel Art Website. All rights reserved to right person</p>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy">Privacy Policy</a>
+    
+</footer>
+
 <script src="script.js"></script>
+
+
+
 </html>
