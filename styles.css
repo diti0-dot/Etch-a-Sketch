@@ -15,13 +15,137 @@ body {
     padding: 0;
 }
 
-header {
-    text-align: center;
-    font-size: 40px;
-    color: #00ff00;
-    margin: 20px 0;
-    text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.7);
+.header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+     padding: 10px; 
+     list-style: none;
+     margin: 10px;
+  }
+  .header img {
+    max-width: 80px;
 }
+
+  
+.header a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .header a:hover {
+    color: #00ff00;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+  }
+  .container{
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+  }
+  h3{
+    color: #00ff00;
+    font-size: 40px;
+    text-align: center;
+  }
+.name{
+    color: #00ff00;
+    font-size: 60px;
+    text-align: center;
+}
+
+#home h1, #home h2, #gallery h2, #tutorials h2, #community h2, #draw_now h2{ 
+    color: #00ff00; 
+    font-size: 40px; 
+    text-align: center; 
+}
+
+#home{
+    padding: 40px;
+    margin: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#home ul {
+    list-style-type: none;
+    display: block;
+  }
+
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #333;
+    color: white;
+  }
+
+  
+.art-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 20px;
+    margin: 30px;
+    align-items: center;
+}
+
+div.art-item{
+    margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  
+}
+
+div.art-item img{
+    width: 100%;
+    height: auto;
+    
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+#tutorials{
+    padding: 40px;
+    margin: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+.video{
+    width: 100%;
+    height: auto;
+    gap: 40px;
+}
+
+#community, #draw_now{
+    padding: 40px;
+    margin: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#community a {
+    color: #00ff00;
+}
+
 
 .twoContainers {
     display: flex;
@@ -123,6 +247,17 @@ header {
     transition: all 0.3s ease;
 }
 
+#createNewGrid{
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 .randomColor button:hover,
 .clear button:hover {
     background: #00ff00;
@@ -158,4 +293,19 @@ header {
 
 .divRow.sketched {
     background-color: #3498db; 
+}
+footer a{
+    color: #00ff00;
+}
+
+.copy{
+    color: white;
+    text-align: center;
+}
+
+footer{
+    padding: 10px;
+    margin: 10px;
+    margin-top: 30px;
+    text-align: center;
 }
