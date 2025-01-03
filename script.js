@@ -18,6 +18,19 @@ dropdownLinks.forEach(link => {
     createGrid(pixelValue, pixelValue);
   });
 });
+let createNewGrid = document.querySelector("#createNewGrid");
+
+createNewGrid.addEventListener("click", () => {
+	let sides = prompt("Enter prefered pixels(max is 100):");
+	if (sides > 100){
+    alert("max is 100")
+  }else{
+
+  pixelValue = sides;
+  }
+	createGrid(pixelValue, pixelValue);
+});
+
 
 // Update selected color from color picker
 colorPicker.addEventListener('input', () => {
