@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: #1e1e1e;
     color: white;
@@ -25,6 +19,7 @@ body {
      width: 100%;
     position: fixed;
     top: 0;
+    z-index: 10;
   }
   .header img {
     max-width: 80px;
