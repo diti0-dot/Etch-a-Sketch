@@ -8,6 +8,7 @@ const clearBtn = document.getElementById('clear');
 // Default values
 let pixelValue = 8; // Grid size
 let selectedColor = '#ff0000'; // Initial color
+let sides = 8;
 
 // Event Listeners
 
@@ -21,10 +22,13 @@ dropdownLinks.forEach(link => {
 let createNewGrid = document.querySelector("#createNewGrid");
 
 createNewGrid.addEventListener("click", () => {
-	let sides = prompt("Enter prefered pixels(max is 100):");
+	 sides = prompt("Enter prefered pixels(max is 100):");
 	if (sides > 100){
     alert("max is 100")
-  }else{
+  }else if(sides ==="" ||  sides === null){
+    sides = 8;
+  }
+  else{
 
   pixelValue = sides;
   }
