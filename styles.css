@@ -308,3 +308,18 @@ footer{
     margin-top: 30px;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .art-grid {
+        grid-template-columns: auto;
+    }
+
+    .header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
