@@ -256,7 +256,10 @@ div.desc {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
+#createNewGrid:hover {
+    background: #00ff00;
+    color: black;
+}
 .randomColor button:hover,
 .clear button:hover {
     background: #00ff00;
