@@ -1,5 +1,6 @@
-
+// ================================
 // Selectors
+// ================================
 
 const spaceEl = document.querySelector('.space');
 const dropdownLinks = document.querySelectorAll('.dropdown-content a');
@@ -26,11 +27,19 @@ dropdownLinks.forEach(link => {
   });
 });
 
-//display the form for input
-createNewGrid.addEventListener("click", () => {
-  formInput.style.display = "block";
+//color picker
+colorPicker.addEventListener('input', () => {
+  selectedColor = colorPicker.value;
 });
 
+randomBtn.addEventListener('click', () => {
+  const rows = document.querySelectorAll('.divRow');
+  rows.forEach(row => {
+    row.addEventListener('mouseenter', () => {
+      row.style.backgroundColor = getRandomColor();
+    });
+  });
+});
 //select grid values from input form
 createGridButton.addEventListener("click", (event) => {
   event.preventDefault();
@@ -45,18 +54,9 @@ createGridButton.addEventListener("click", (event) => {
   }
 });
 
-//color picker
-colorPicker.addEventListener('input', () => {
-  selectedColor = colorPicker.value;
-});
-
-randomBtn.addEventListener('click', () => {
-  const rows = document.querySelectorAll('.divRow');
-  rows.forEach(row => {
-    row.addEventListener('mouseenter', () => {
-      row.style.backgroundColor = getRandomColor();
-    });
-  });
+//display the form for input
+createNewGrid.addEventListener("click", () => {
+  formInput.style.display = "block";
 });
 
 clearBtn.addEventListener('click', () => {
