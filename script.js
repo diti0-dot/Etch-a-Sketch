@@ -95,4 +95,50 @@ function random(max) {
   return Math.floor(Math.random() * max);
 }
 
+
+const downloadBtn = document.getElementById('downloadBtn');
+
+
+downloadBtn.addEventListener('click', downloadArt);
+
+
+function downloadArt() {
+    
+    const canvas = document.createElement('canvas');
+    const space = document.querySelector('.space');
+    const cols = space.querySelectorAll('.divCol');
+    const rows = cols[0] ? cols[0].querySelectorAll('.divRow') : [];
+    
+    if (cols.length === 0 || rows.length === 0) {
+        alert('No art to download! Please create something first.');
+        return;
+    }
+
+    
+    const pixelSize = 20; 
+    canvas.width = cols.length * pixelSize;
+    canvas.height = rows.length * pixelSize;
+    
+    const ctx = canvas.getContext('2d');
+
+    cols.forEach((col, colIndex) => {
+        const rowsInCol = col.querySelectorAll('.divRow');
+        rowsInCol.forEach((row, rowIndex) => {
+            const bgColor = window.getComputedStyle(row).backgroundColor;
+            ctx.fillStyle = bgColor;
+            ctx.fillRect(
+                colIndex * pixelSize, 
+                rowIndex * pixelSize, 
+                pixelSize, 
+                pixelSize
+            );
+        });
+    });
+    
+    
+    const link = document.createElement('a');
+    link.download = 'pixel-art.png';
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+}
 createGrid(pixelValue, pixelValue);
