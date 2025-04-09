@@ -233,7 +233,7 @@ div.desc {
 }
 
 .randomColor button,
-.clear button {
+.clear button, .download button  {
     padding: 10px 20px;
     margin-top: 10px;
     border: 1px solid #444;
@@ -263,7 +263,7 @@ div.desc {
 }
 
 .randomColor button:hover,
-.clear button:hover {
+.clear button:hover, .download button:hover {
     background: #00ff00;
     color: black;
 }
